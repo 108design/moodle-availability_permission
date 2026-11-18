@@ -23,9 +23,9 @@ along with Moodle. If not, see <https://www.gnu.org/licenses/>.
   <img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/branding/logo.svg" alt="Permission" width="125" height="125">
 </p>
 
-# Permission for Moodle
+# Availability Permission for Moodle
 
-Permission adds a **Restrict access** condition for Moodle activities, resources and course sections. Use it when access should follow a Moodle permission your site already uses.
+Availability Permission adds a **Restrict access** condition for Moodle activities, resources and course sections. Use it when access should follow a Moodle permission your site already uses.
 
 <details>
 <summary>Screenshots</summary>
