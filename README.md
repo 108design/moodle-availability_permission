@@ -19,32 +19,49 @@ along with Moodle. If not, see <https://www.gnu.org/licenses/>.
 @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 -->
 
-# Permission
+<p align="center">
+  <img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/branding/logo.svg" alt="Permission" width="125" height="125">
+</p>
 
-Add **Permission** under **Restrict access** in an activity, resource or course section.
-Choose whether learners must have the selected permission. Use Moodle's restriction sets to combine it with other conditions.
-If both course and system permissions are available, choose the relevant group first.
+# Permission for Moodle
 
-The default selection includes permissions for course access, participants, groups, grades, competencies and reports.
-Each option shows the Moodle label and capability ID where a label is available.
-Moodle checks course permissions in the course, including role overrides. It checks system permissions at site level.
+Permission adds a **Restrict access** condition for Moodle activities, resources and course sections. Use it when access should follow a Moodle permission your site already uses.
 
-Site administrators can change the selection under **Site administration → Plugins → Availability restrictions → Restriction by permission**.
-Each group has its own search and list of selected permissions. Search by Moodle label or capability ID to add permissions from Moodle and installed plugins.
-Removing a permission from the selection hides it for new conditions. Moodle still checks existing conditions that use it.
-For a course restored on another site, approve any additional capabilities in that site's selection.
+<details>
+<summary>Screenshots</summary>
 
-Moodle’s permission to bypass availability restrictions still applies. Before disabling or uninstalling the plugin,
-review the affected activities and sections. Moodle can skip an availability condition when its plugin is unavailable.
+<table>
+<tr>
+<td width="50%" valign="top"><a href="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/01-activity-condition.jpg"><img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/01-activity-condition.jpg" alt="Permission conditions in an activity" width="100%"></a><br><strong>Permission conditions in an activity</strong><br>Choose a course or system permission in the Moodle activity settings.</td>
+<td width="50%" valign="top"><a href="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/02-permission-catalogue.jpg"><img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/02-permission-catalogue.jpg" alt="Site administration permission catalogue" width="100%"></a><br><strong>Site administration permission catalogue</strong><br>Choose which course and system permissions are available when editors add a condition.</td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/03-learner-access.jpg"><img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/screenshots/03-learner-access.jpg" alt="Access restriction shown to a participant" width="100%"></a><br><strong>Access restriction shown to a participant</strong><br>Moodle explains which permission the participant needs to open the activity.</td>
+<td width="50%"></td>
+</tr>
+</table>
 
-## Requirements
+</details>
 
-Moodle 4.5 to 5.3 with restricted access enabled. Install under `availability/condition/permission` in the Moodle web root.
+Course editors choose a permission and decide whether participants must have it. Moodle checks course permissions in the relevant course, including role overrides, and system permissions at site level. Combine the condition with Moodle’s other access restrictions when a rule needs more than one check.
+
+Site administrators choose which permissions appear in the editor. Course and system permissions have separate search fields, and the editor shows the capability ID beside its Moodle label. Removing a permission from the selection hides it for new conditions. Existing conditions that use it continue to apply.
+
+Supports Moodle 4.5–5.3 with restricted access enabled.
+
+## Install
+
+Download the installation ZIP from the [latest release](https://github.com/108design/moodle-availability_permission/releases/latest).
+Use Moodle’s plugin installer, or copy the files to `availability/condition/permission` in the Moodle web root.
+Complete installation under **Site administration → Notifications**.
+
+## Configure
+
+Open **Site administration → Plugins → Availability restrictions → Restriction by permission** to manage the catalogue.
+In an activity, resource or course section, choose **Restrict access → Add restriction → Permission**.
+When restoring a course on another site, approve any additional capabilities there before using restored conditions.
 
 ## Licence
 
-GPL v3 or later. See [COPYING.txt](COPYING.txt). The YUI build metadata and AMD source maps
-carry the same copyright and licence as their sources.
-
-The browser form uses the Moodle YUI build for `moodle-availability_permission-form`.
-Keep the full GPL header at the top of each generated JavaScript variant when rebuilding the form.
+GNU General Public License v3 or later. See [COPYING.txt](COPYING.txt).
+Available free of charge under the terms of the applicable license.
