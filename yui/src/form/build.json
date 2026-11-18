@@ -1,0 +1,8 @@
+{
+    "name": "moodle-availability_permission-form",
+    "builds": {
+        "moodle-availability_permission-form": {
+            "jsfiles": ["form.js"]
+        }
+    }
+}

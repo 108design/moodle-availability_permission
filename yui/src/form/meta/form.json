@@ -1,0 +1,5 @@
+{
+    "moodle-availability_permission-form": {
+        "requires": ["node", "moodle-core_availability-form"]
+    }
+}
