@@ -89,6 +89,9 @@ M.availability_permission.form.getNode = function(json) {
             M.core_availability.form.update();
         });
         fields.append(scopeSelect);
+    } else if (scopes.length === 1) {
+        fields.append(Y.Node.create('<span class="col-form-label availability-permission-scope"></span>')
+            .set('text', M.util.get_string('scope_' + initialScope, component)));
     }
     showChoices(initialScope, saved);
     select.on('change', function() {

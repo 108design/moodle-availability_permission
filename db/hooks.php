@@ -33,4 +33,12 @@ $callbacks = [
         'hook' => \core\hook\output\before_standard_footer_html_generation::class,
         'callback' => [\availability_permission\local\admin_help::class, 'footer'],
     ],
+    [
+        'hook' => \core\hook\output\before_standard_head_html_generation::class,
+        'callback' => [\availability_permission\local\admin_branding::class, 'head'],
+    ],
+    [
+        'hook' => \core\hook\output\before_http_headers::class,
+        'callback' => [\availability_permission\local\admin_branding::class, 'prepare'],
+    ],
 ];
