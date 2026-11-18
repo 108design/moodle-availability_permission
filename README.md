@@ -20,12 +20,12 @@ along with Moodle. If not, see <https://www.gnu.org/licenses/>.
 -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/branding/logo.svg" alt="Permission" width="125" height="125">
+  <img src="https://raw.githubusercontent.com/108design/moodle-availability_permission/main/docs/branding/logo.svg" alt="Restriction by permission" width="125" height="125">
 </p>
 
-# Availability Permission for Moodle
+# Restriction by permission
 
-Availability Permission adds a **Restrict access** condition for Moodle activities, resources and course sections. Use it when access should follow a Moodle permission your site already uses.
+Restriction by permission adds a **Restrict access** condition for Moodle activities, resources and course sections. Use it when access should follow a Moodle permission your site already uses.
 
 <details>
 <summary>Screenshots</summary>
