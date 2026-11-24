@@ -24,14 +24,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminhelp'] = 'Permission Restriction Help';
-$string['adminhelp_catalogue'] = 'Choose Permissions for the Course Editor';
+$string['adminhelp'] = 'Permission restriction help';
+$string['adminhelp_catalogue'] = 'Choose permissions for the course editor';
 $string['adminhelp_catalogue_article'] = '<p>Course and system permissions each have their own search. Search by the Moodle label or capability ID, such as <code>moodle/course:viewparticipants</code>. When both groups have approved permissions, editors choose the group first in the condition.</p><p>Moodle checks course permissions in the course, including role overrides. It checks system permissions at site level. Use Moodle’s role settings to assign permissions.</p>';
-$string['adminhelp_saved'] = 'What Happens to Saved Conditions';
+$string['adminhelp_saved'] = 'What happens to saved conditions';
 $string['adminhelp_saved_article'] = '<p>Removing a permission from the selection keeps it in any condition that already uses it. When you reopen a rule, you can see that the permission is hidden for new conditions.</p><p>If the capability itself disappears, for example after uninstalling the plugin that defines it, the condition stays unmet. Review affected courses before removing that plugin. On another site, approve the same capability there to use it in restored conditions.</p>';
 $string['adminhelpmore'] = 'More in the help panel';
-$string['adminhelptopics'] = 'Help Topics';
-$string['catalogue'] = 'Editor Permissions';
+$string['adminhelptopics'] = 'Help topics';
+$string['catalogue'] = 'Editor permissions';
 $string['catalogue_help'] = 'Choose which permissions appear when course editors add a new condition.';
 $string['cataloguedescription'] = 'Clearing a selection hides that permission for new conditions. Saved conditions continue to apply.';
 $string['catalogueretired'] = '{$a} (hidden for new conditions)';
@@ -46,6 +46,6 @@ $string['requires'] = 'You have the permission “{$a}”.';
 $string['requires_not'] = 'You are missing the permission “{$a}”.';
 $string['requires_unavailable'] = 'The configured permission is unavailable.';
 $string['scope'] = 'Permission scope';
-$string['scope_course'] = 'Course Permissions';
-$string['scope_system'] = 'System Permissions';
+$string['scope_course'] = 'Course permissions';
+$string['scope_system'] = 'System permissions';
 $string['title'] = 'Permission';
